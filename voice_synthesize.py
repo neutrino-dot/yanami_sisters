@@ -1,7 +1,7 @@
 from music8bit import *
 from music8bit import WaveGenerator
 from music8bit.utils import _validate
-from .pico_formants import formants
+from pico_formants import formants
 import numpy as np
 from scipy.signal import square,butter,sosfilt
 
