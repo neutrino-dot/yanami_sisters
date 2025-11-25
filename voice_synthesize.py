@@ -18,7 +18,7 @@ def bpf(wave,formant):
 def apply_fade(wave, fade_time):
     """音の前後にフェードをかけて自然に音を変更するための関数"""
     wave = np.atleast_1d(wave)
-    fade_samples = int(SAMPLING_RATE * fade_time)
+    fade_samples = int(22050 * fade_time)
     fade_in = np.linspace(0, 1, fade_samples)
     fade_out = np.linspace(1, 0, fade_samples)
 
