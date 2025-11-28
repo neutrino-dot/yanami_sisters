@@ -6,7 +6,7 @@ from scipy.signal import square,butter,sosfilt
 
 def _bpf(wave,formant):
   """bpfフィルタ関数"""
-  out = wave.copy()/32
+  out = wave.copy()/16
   for fc, bw in formant:
       low = fc - bw / 2
       high = fc + bw / 2
